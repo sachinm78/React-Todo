@@ -1,22 +1,16 @@
-import React from 'react';
-import './App.css';
+import React from "react"
+import TodoItem from "./TodoItem"
+import './App.css'
 
 function App() {
-  return (
-      <div>
-          <input type="checkbox" />
-          <p>Placeholder text here</p>
-          
-          <input type="checkbox" />
-          <p>Placeholder text here</p>
-          
-          <input type="checkbox" />
-          <p>Placeholder text here</p>
-      
-          <input type="checkbox" />
-          <p>Placeholder text here</p>
-      </div>
-  )
+    return (
+        <div className="todo-list">
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
+        </div>
+    )
 }
 
 export default App

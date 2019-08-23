@@ -30,8 +30,13 @@ class App extends React.Component {
         const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} handleChange={this.handleChange}/>)
         
         return (
-            <div className="todo-list">
-                {todoItems}
+            <div>
+                <div className="title">
+                    <h1>My Todos</h1>
+                </div>
+                <div className="todo-list">
+                    {todoItems}
+                </div>
             </div>
         )    
     }
